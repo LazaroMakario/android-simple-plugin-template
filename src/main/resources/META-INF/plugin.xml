@@ -1,12 +1,9 @@
 <idea-plugin>
     <id>com.lazaro.makario.simple-notification</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Simple Notification</name>
+    <vendor email="lazaro.makario@gmail.com" url="https://www.linkedin.com/in/lazaro-makario">Lazaro Makario</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <description>Test for show simple notification with IntelliJ IDEA</description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
@@ -18,5 +15,9 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="SimpleNotification" class="SimpleNotification" text="Show Simple Notification"
+                description="Test for show simple notification">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>
